@@ -10,9 +10,10 @@ import Features3 from '~/components/widgets/Features3.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 // import Brands from '~/components/widgets/Brands.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
+import Note from '~/components/widgets/Note.astro';
 
 const metadata = {
-  title: 'Cryptos Al Aire — Cursos de Criptomonedas y Más',
+  title: 'Criptos Al Aire — Cursos de Criptomonedas y Más',
 };
 ---
 
@@ -20,25 +21,25 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero2
-    tagline='Cryptos Al Aire'
+    tagline='Criptos Al Aire'
     actions={[
       {
         variant: 'primary',
         target: '_blank',
         text: 'Comienza Ahora',
-        href: '/pricing',
+        href: '/courses',
         icon: 'tabler:trending-up',
       },
       { text: 'Aprender más', href: '/blog' }]}
     image={{ src: '~/assets/images/cryptocoins.jpg', alt: 'Cryptocoins' }}
   >
   <Fragment slot="title">
-    Aprende a dominar las <span class="text-accent dark:text-white highlight"> criptomonedas </span> con <span class="hidden xl:inline"> nosotros </span> !
+    ¡Aprende a dominar las <span class="text-accent dark:text-white highlight"> criptomonedas </span>!
   </Fragment>
 
   <Fragment slot="subtitle">
     <span class="hidden sm:inline">
-      La mejor plataforma para aprender y ademas con la <span class="font-semibold"> mejor información </span> en tendencia de criptomonedas, las mejores wallets y análisis detallados en nuestro blog.
+      La plataforma ideal para aprender a <span class="font-semibold"> invertir y generar ganancias</span>, con la información más actualizada sobre tendencias en criptomonedas, las mejores wallets y análisis detallados en nuestro blog.
     </span>
   </Fragment>
   </Hero2>
@@ -52,7 +53,7 @@ const metadata = {
   <Features2
     id="about"
     title="Sobre Nosotros"
-    subtitle="En Cryptos Al Aire, creemos que el conocimiento es el camino hacia la innovación y el éxito en el mundo financiero moderno. Somos una empresa ecuatoriana pionera en la enseñanza sobre criptomonedas y tecnología blockchain. Fundada con la misión de democratizar el acceso al conocimiento cripto, BitSwap se ha consolidado como un referente en educación financiera digital en Ecuador."
+    subtitle="En Criptos Al Aire, creemos que el conocimiento es el camino hacia la innovación y el éxito en el mundo financiero moderno. Somos una empresa ecuatoriana pionera en la enseñanza sobre criptomonedas y tecnología blockchain. Fundada con la misión de democratizar el acceso al conocimiento cripto, BitSwap se ha consolidado como un referente en educación financiera digital en Ecuador."
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -60,7 +61,10 @@ const metadata = {
   </Features2>
 
   <!-- Stats Widget ****************** -->
+  <!-- Note Widget ******************* -->
 
+  <Note />
+  
   <!-- <Stats
     title="Discover the impressive impact of Astrowind"
     subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
@@ -123,7 +127,7 @@ const metadata = {
 
   <Features2
     title="¿Por qué estudiar con nosotros?"
-    subtitle="En BitSwap te ofrecemos más que cursos; te brindamos una experiencia transformadora para que domines el mundo de las criptomonedas y te conviertas en un caso de éxito."
+    subtitle="En Criptos Al Aire te ofrecemos más que cursos; te brindamos una experiencia transformadora para que domines el mundo de las criptomonedas y te conviertas en un caso de éxito."
     items={[
       {
         title: 'Metodología Práctica y Clara',
@@ -134,7 +138,7 @@ const metadata = {
       {
         title: 'Casos de Éxito',
         description:
-        'En Cryptos Al Aire, nuestros estudiantes han logrado resultados sorprendentes, desde generar ingresos adicionales hasta convertirse en referentes locales en el ecosistema blockchain. Tú puedes ser el próximo gran ejemplo de éxito.',
+        'En Criptos Al Aire, nuestros estudiantes han logrado resultados sorprendentes, desde generar ingresos adicionales hasta convertirse en referentes locales en el ecosistema blockchain. Tú puedes ser el próximo gran ejemplo de éxito.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
@@ -287,7 +291,7 @@ const metadata = {
   <Fragment slot="title">No dejes que el futuro te pase por delante</Fragment>
 
   <Fragment slot="subtitle">
-    Cada día que no estás aprendiendo sobre criptomonedas, estás dejando dinero sobre la mesa. Con Cryptos Al Aire, adquiere el
+    Cada día que no estás aprendiendo sobre criptomonedas, estás dejando dinero sobre la mesa. Con Criptos Al Aire, adquiere el
     conocimiento necesario para aprovechar las oportunidades del mercado y evita perder la ventaja que otros ya están tomando.
   </Fragment>
 </CallToAction>

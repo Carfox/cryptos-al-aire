@@ -1,6 +1,6 @@
 site:
-  name: Cryptos Al Aire
-  site: 'https://cryptosalaire.vercel.app'
+  name: Criptos Al Aire
+  site: 'https://Criptosalaire.vercel.app'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Cryptos Al Aire
+    default: Criptos Al Aire
     template: '%s — AstroWind'
   description: "🚀 Tu portal para explorar tendencias de criptomonedas, recomendaciones de wallets y análisis del mercado. Ideal para entusiastas y expertos del ecosistema cripto."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Cryptos Al Aire
+    site_name: Criptos Al Aire
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@CryptosAlAire'
-    site: '@CryptosAlAire'
+    handle: '@CriptosAlAire'
+    site: '@CriptosAlAire'
     cardType: summary_large_image
 
 i18n:
@@ -66,7 +66,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: "G-E25L90RQP" # or "G-XXXXXXXXXX"
+      id: "G-E25L90RQP9"  # or "G-XXXXXXXXXX"
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

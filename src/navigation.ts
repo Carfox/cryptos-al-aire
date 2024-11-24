@@ -65,11 +65,11 @@ export const headerData = {
         },
         {
           text: 'Categorías',
-          href: getPermalink('tutorials', 'category'),
+          href: getPermalink('blockchain', 'category'),
         },
         {
           text: 'Tendencias',
-          href: getPermalink('criptomonedas', 'tag'),
+          href: getPermalink('tendencias', 'tag'),
         },
       ],
     },

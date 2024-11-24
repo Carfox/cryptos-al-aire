@@ -1,66 +1,58 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import Features2 from '~/components/widgets/Features2.astro';
-import Features from '~/components/widgets/Features.astro';
-import Stats from '~/components/widgets/Stats.astro';
+// import Features from '~/components/widgets/Features.astro';
+// import Stats from '~/components/widgets/Stats.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Brands from '~/components/widgets/Brands.astro';
-
-import { YouTube } from 'astro-embed';
+// import Brands from '~/components/widgets/Brands.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 
 const metadata = {
-  title: 'Startup Landing Page',
+  title: 'Cryptos Al Aire — Cursos de Criptomonedas y Más',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="Startup Web Demo"
+  <Hero2
+    tagline='Cryptos Al Aire'
     actions={[
       {
         variant: 'primary',
         target: '_blank',
-        text: 'Get templates',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        text: 'Comienza Ahora',
+        href: '/pricing',
+        icon: 'tabler:trending-up',
       },
-      { text: 'Learn more', href: '#features' },
-    ]}
+      { text: 'Aprender más', href: '/blog' }]}
+    image={{ src: '~/assets/images/cryptocoins.jpg', alt: 'Cryptocoins' }}
   >
-    <Fragment slot="title">
-      Improve <span class="hidden sm:inline">the online presence of</span> your <span
-        class="text-accent dark:text-white highlight">Startup</span
-      > with Astrowind templates
-    </Fragment>
+  <Fragment slot="title">
+    Aprende a dominar las <span class="text-accent dark:text-white highlight"> criptomonedas </span> con <span class="hidden xl:inline"> nosotros </span> !
+  </Fragment>
 
-    <Fragment slot="subtitle">
-      Step into the spotlight with <span class="font-semibold">Astrowind</span> templates, your pathway to fortifying your
-      startup's digital footprint, fostering credibility, and expanding your reach.
-    </Fragment>
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline">
+      La mejor plataforma para aprender y ademas con la <span class="font-semibold"> mejor información </span> en tendencia de criptomonedas, las mejores wallets y análisis detallados en nuestro blog.
+    </span>
+  </Fragment>
+  </Hero2>
 
-    <Fragment slot="image">
-      <YouTube id="gxBkghlglTg" title="Astro just Launched.... Could it be the ultimate web framework?" />
-      <style is:inline>
-        lite-youtube {
-          margin: 0 auto;
-          max-width: 100%;
-        }
-      </style>
-    </Fragment>
-  </Hero>
+  
+
+
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="About us"
-    subtitle="We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 4.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
+    id="about"
+    title="Sobre Nosotros"
+    subtitle="En Cryptos Al Aire, creemos que el conocimiento es el camino hacia la innovación y el éxito en el mundo financiero moderno. Somos una empresa ecuatoriana pionera en la enseñanza sobre criptomonedas y tecnología blockchain. Fundada con la misión de democratizar el acceso al conocimiento cripto, BitSwap se ha consolidado como un referente en educación financiera digital en Ecuador."
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -69,7 +61,7 @@ const metadata = {
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     title="Discover the impressive impact of Astrowind"
     subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
     stats={[
@@ -78,11 +70,11 @@ const metadata = {
       { title: 'User Ratings', amount: '4.8' },
       { title: 'Satisfied Clients', amount: '116K' },
     ]}
-  />
+  /> -->
 
   <!-- Brands Widget ****************** -->
 
-  <Brands
+  <!-- <Brands
     title="Partnerships & Collaborations"
     subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
     icons={[]}
@@ -125,41 +117,41 @@ const metadata = {
         alt: 'Yahoo',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="What services do we provide?"
-    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    title="¿Por qué estudiar con nosotros?"
+    subtitle="En BitSwap te ofrecemos más que cursos; te brindamos una experiencia transformadora para que domines el mundo de las criptomonedas y te conviertas en un caso de éxito."
     items={[
       {
-        title: 'Installation Instructions',
+        title: 'Metodología Práctica y Clara',
         description:
-          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
+        'Nuestros cursos están diseñados para que aprendas de forma sencilla y paso a paso, sin importar si eres principiante o tienes experiencia previa. Cada lección está estructurada para que comprendas fácilmente los conceptos clave del mundo cripto.',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Demo and Previews',
+        title: 'Casos de Éxito',
         description:
-          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
-        icon: 'flat-color-icons:template',
+        'En Cryptos Al Aire, nuestros estudiantes han logrado resultados sorprendentes, desde generar ingresos adicionales hasta convertirse en referentes locales en el ecosistema blockchain. Tú puedes ser el próximo gran ejemplo de éxito.',
+        icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Technical Support',
-        description:
-          'Providing customer support for any technical issues related to the templates or their implementation.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
+      title: 'Facilidades de Aprendizaje',
+      description:
+        'Nuestra plataforma te ofrece acceso 24/7 a cursos en línea, recursos descargables y un blog actualizado con tendencias. Además, nuestro equipo de soporte está disponible para resolver tus dudas y guiarte en tu camino de aprendizaje.',
+      icon: 'flat-color-icons:business-contact',
+    },
     ]}
-  >
+  />
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+
 
   <!-- Features Widget *************** -->
-
+<!-- 
   <Features
     id="features"
     title="Main features of our templates"
@@ -200,42 +192,27 @@ const metadata = {
         icon: 'tabler:plug-connected',
       },
     ]}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
+    title="Preguntas Frecuentes"
     items={[
       {
-        title: 'What are landing page templates?',
+        title: '¿Qué puedo aprender en los cursos de BitSwap?',
         description:
-          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+        'Desde los fundamentos de blockchain hasta estrategias avanzadas de trading y gestión de activos digitales.'
       },
       {
-        title: 'Why should I use a template?',
+        title: '¿Los cursos están disponibles solo en Ecuador?',
         description:
-          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+        'En nuestra plataforma ofrecemos opciones tanto a nivel nacional como internacional.'
       },
       {
-        title: 'Can I preview templates before buying?',
+        title: '¿Es necesario tener experiencia previa?',
         description:
-          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
-      },
-      {
-        title: 'Do I need technical skills to use a template?',
-        description:
-          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
-      },
-      {
-        title: 'Can I use the template on multiple websites?',
-        description:
-          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
-      },
-      {
-        title: 'What if I need help with customization?',
-        description:
-          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
+        'No, nuestros cursos están diseñados para principiantes y expertos por igual.' 
       },
     ]}
   >
@@ -247,7 +224,7 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Let us know how we can help"
+    title=""
     subtitle="We’re here to help and answer any question you might have."
     columns={4}
     items={[
@@ -297,21 +274,22 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        target: '_blank',
-        text: 'Get templates',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">Be a part of our vision</Fragment>
+  actions={[
+    {
+      variant: 'primary',
+      target: '_self',
+      text: 'Empieza ahora',
+      href: '/courses',
+      icon: 'tabler:school',
+    },
+  ]}
+>
+  <Fragment slot="title">No dejes que el futuro te pase por delante</Fragment>
 
-    <Fragment slot="subtitle">
-      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
-      impact.
-    </Fragment>
-  </CallToAction>
+  <Fragment slot="subtitle">
+    Cada día que no estás aprendiendo sobre criptomonedas, estás dejando dinero sobre la mesa. Con Cryptos Al Aire, adquiere el
+    conocimiento necesario para aprovechar las oportunidades del mercado y evita perder la ventaja que otros ya están tomando.
+  </Fragment>
+</CallToAction>
+
 </Layout>

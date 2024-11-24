@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Cryptos Al Aire — Tendencias, wallets y más sobre criptomonedas',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +25,23 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Comienza ahora',
+        href: '/blog',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:trending-up',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Aprender más', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/cryptocoins.jpg', alt: 'Cryptocoins' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      ¡Descubre el mundo de las  <span class="text-accent dark:text-white highlight"> criptomonedas </span> con <span class="hidden xl:inline"> nosotros </span> !
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        Encuentra la <span class="font-semibold"> mejor información </span> en tendencia de criptomonedas, las mejores wallets y análisis detallados en nuestro blog.
+      </span>
     </Fragment>
   </Hero>
 

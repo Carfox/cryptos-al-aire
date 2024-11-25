@@ -16,6 +16,7 @@ import BasicScripts from '~/components/common/BasicScripts.astro';
 import { ViewTransitions } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
+import Tagger from '~/components/common/Tagger.astro';
 
 export interface Props {
   metadata?: MetaDataType;
@@ -35,6 +36,8 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+    <Tagger/>
+    
 
     <!-- Comment the line below to disable View Transitions -->
     <ViewTransitions fallback="swap" />

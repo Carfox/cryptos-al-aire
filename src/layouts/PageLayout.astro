@@ -4,9 +4,13 @@ import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
 import Announcement from '~/components/widgets/Announcement.astro';
 import  SpeedInsights  from "@vercel/speed-insights/astro"
+import Analytics from '@vercel/analytics/astro'
 import { headerData, footerData } from '~/navigation';
 
 import type { MetaData } from '~/types';
+import Cookies from '~/components/common/Cookies.astro';
+import Tagger from '~/components/common/Tagger.astro';
+import TaggerBody from '~/components/common/TaggerBody.astro';
 
 export interface Props {
   metadata?: MetaData;
@@ -21,12 +25,16 @@ const { metadata } = Astro.props;
   </slot>
   <slot name="header">
     <Header {...headerData} isSticky showRssFeed showToggleTheme />
+    <Cookies/>
+    <Tagger/>
   </slot>
   <main>
+    <TaggerBody/>
     <slot />
   </main>
   <slot name="footer">
     <Footer {...footerData} />
   </slot>
   <SpeedInsights />
+  <Analytics/>
 </Layout>

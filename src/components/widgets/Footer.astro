@@ -2,6 +2,9 @@
 import { Icon } from 'astro-icon/components';
 import { SITE } from 'astrowind:config';
 import { getHomePermalink } from '~/utils/permalinks';
+import Policy from '../common/Policy.astro';
+import Terms from '../common/Terms.astro';
+import CookiesPrivacy from '../common/CookiesPrivacy.astro';
 
 interface Link {
   text?: string;
@@ -98,7 +101,11 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
 
       <div class="text-sm mr-4 dark:text-muted">
         <Fragment set:html={footNote} />
+        <Policy/> | 
+        <CookiesPrivacy/> | 
+        <Terms/>
       </div>
     </div>
+    
   </div>
 </footer>

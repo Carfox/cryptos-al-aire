@@ -8,7 +8,6 @@ import Analytics from '@vercel/analytics/astro'
 import { headerData, footerData } from '~/navigation';
 
 import type { MetaData } from '~/types';
-import Cookies from '~/components/common/Cookies.astro';
 import Tagger from '~/components/common/Tagger.astro';
 import TaggerBody from '~/components/common/TaggerBody.astro';
 
@@ -25,7 +24,6 @@ const { metadata } = Astro.props;
   </slot>
   <slot name="header">
     <Header {...headerData} isSticky showRssFeed showToggleTheme />
-    <Cookies/>
     <Tagger/>
   </slot>
   <main>
@@ -37,4 +35,5 @@ const { metadata } = Astro.props;
   </slot>
   <SpeedInsights />
   <Analytics/>
+
 </Layout>

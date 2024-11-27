@@ -17,7 +17,6 @@ import { ViewTransitions } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
 import Tagger from '~/components/common/Tagger.astro';
-import Cookies from '~/components/common/Cookies.astro';
 
 export interface Props {
   metadata?: MetaDataType;
@@ -38,7 +37,6 @@ const { language, textDirection } = I18N;
     <SiteVerification />
     <Analytics />
     <Tagger/>
-    <Cookies/>
     
 
     <!-- Comment the line below to disable View Transitions -->

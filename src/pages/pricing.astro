@@ -8,7 +8,7 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'Cursos de Blockchain',
 };
 ---
 
@@ -16,94 +16,97 @@ const metadata = {
   <!-- HeroText Widget ******************* -->
 
   <HeroText
-    tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    tagline="Cursos de Blockchain"
+    title="Planes que se ajustan a tus necesidades"
+    subtitle="Encuentra el curso perfecto para iniciar tu viaje en el mundo del blockchain."
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="Nuestros planes"
+    subtitle="Solo paga por lo que necesitas"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: 'Básico',
+        subtitle: 'Ideal para principiantes',
+        price: 49,
+        period: 'por curso',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Introducción al blockchain',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'Fundamentos de criptomonedas',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Acceso a material básico de estudio',
           },
           {
-            description: 'In hac habitasse',
+            description: 'Soporte por correo electrónico',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
+          text: 'Inscribirse',
           href: '#',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
+        title: 'Intermedio',
+        subtitle: 'Para desarrolladores y entusiastas',
+        price: 129,
+        period: 'por curso',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Desarrollo de smart contracts',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'Plataformas como Ethereum y Solana',
           },
           {
-            description: 'Volutpat hac curabitur',
+            description: 'Proyectos prácticos guiados',
           },
           {
-            description: 'Pellentesque blandit ut nibh',
+            description: 'Acceso a mentorías en grupo',
           },
           {
-            description: 'Donec fringilla sem',
+            description: 'Soporte por chat en vivo',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
+          text: 'Inscribirse',
           href: '#',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'Más popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'Avanzado',
+        subtitle: 'Diseñado para profesionales',
+        price: 299,
+        period: 'por curso',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'Desarrollo avanzado de DApps',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'Integración de blockchain con APIs',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Análisis de casos reales',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'Certificación oficial incluida',
+          },
+          {
+            description: 'Mentoría personalizada 1 a 1',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
+          text: 'Inscribirse',
           href: '#',
         },
       },
@@ -113,39 +116,39 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="Características de los cursos"
+    subtitle="Descubre por qué nuestros cursos son la mejor opción"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: 'Material actualizado',
+        description: 'Contenido revisado regularmente para reflejar los últimos avances en blockchain.',
+        icon: 'tabler:book',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
-        icon: 'tabler:flip-vertical',
+        title: 'Certificaciones reconocidas',
+        description: 'Obtén certificados que avalan tu aprendizaje en la industria.',
+        icon: 'tabler:certificate',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
-        icon: 'tabler:shield-lock',
+        title: 'Acceso a proyectos prácticos',
+        description: 'Aplica lo aprendido construyendo soluciones blockchain reales.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
+        title: 'Comunidad activa',
+        description: 'Únete a una red global de estudiantes y expertos.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
-        icon: 'tabler:chevrons-up',
+        title: 'Mentoría profesional',
+        description: 'Recibe orientación de instructores con experiencia en el sector.',
+        icon: 'tabler:school',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
-        icon: 'tabler:headset',
+        title: 'Flexibilidad de horarios',
+        description: 'Aprende a tu propio ritmo con acceso 24/7 al contenido.',
+        icon: 'tabler:clock',
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
@@ -154,37 +157,29 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="Tu camino para dominar blockchain"
+    tagline="Un proceso simple y efectivo"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'Elige un curso',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Regístrate en la plataforma',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'Accede al contenido',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Participa en proyectos',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: 'Obtén tu certificación',
         icon: 'tabler:number-5',
-      },
-      {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
       },
     ]}
     image={{
@@ -196,34 +191,34 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    title="Preguntas frecuentes"
+    subtitle="Resolvemos tus dudas sobre nuestros cursos de blockchain."
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: '¿Necesito experiencia previa para inscribirme?',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          'No, tenemos cursos para principiantes que no requieren conocimientos previos.',
       },
       {
-        title: 'Is there a trial period for the different plans?',
+        title: '¿Los cursos incluyen certificación?',
         description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+          'Sí, todos los cursos incluyen una certificación al completarlos con éxito.',
       },
       {
-        title: 'Can I switch between plans?',
+        title: '¿Cómo accedo al contenido del curso?',
         description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+          'Todo el contenido está disponible en línea a través de nuestra plataforma una vez que te inscribas.',
       },
       {
-        title: 'What payment methods do you accept?',
+        title: '¿Puedo cambiarme de plan?',
         description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+          'Claro, puedes actualizar o cambiar de plan según tus necesidades.',
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
+        title: '¿Qué métodos de pago aceptan?',
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+          'Aceptamos tarjetas de crédito, débito y pagos por plataformas digitales seguras.',
       },
     ]}
   />
@@ -231,12 +226,12 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="¿Listo para comenzar tu viaje en blockchain?"
+    subtitle="Inscríbete ahora y transforma tu futuro."
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
+        text: 'Inscribirme ahora',
         href: '/',
       },
     ]}

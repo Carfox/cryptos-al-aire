@@ -1,0 +1,27 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: "Página en Desarrollo",
+  description: "Estamos trabajando en mejorar nuestro sitio. Ten paciencia, pronto estará listo.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+  openGraph: {
+    type: 'website',
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Contenedor principal que ocupa toda la altura de la pantalla -->
+  <div class="flex justify-center items-center h-screen">
+    <!-- Contenido centrado -->
+    <div class="text-center p-8 bg-white rounded-lg max-w-lg w-full">
+      <h1 class="text-4xl font-bold text-gray-800">¡Seguimos en desarrollo!</h1>
+      <p class="mt-4 text-lg text-gray-600">Estamos trabajando para brindarte la mejor experiencia. Ten paciencia, ¡pronto estará listo!</p>
+      <p class="mt-4 text-sm text-gray-500">¡Gracias por tu paciencia!</p>
+    </div>
+  </div>
+</Layout>
